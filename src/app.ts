@@ -10,13 +10,15 @@ const app: Application = express();
 
 app.use(cors());
 app.use(cookieParser());
-
 //parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1', routes);
 
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello, This is University Management Core Service Server!');
+});
 
 //global error handler
 app.use(globalErrorHandler);
