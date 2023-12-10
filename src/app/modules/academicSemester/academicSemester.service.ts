@@ -4,7 +4,7 @@ import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import prisma from '../../../shared/prisma';
 import { IAcademicSemeterFilterRequest } from './academicSemester.interface';
-import { AcademicSemesterSearchAbleFields } from './academicSemeter.contants';
+import { AcademicSemesterSearchAbleFields } from './academicSemeter.constants';
 
 const insertIntoDB = async (
     academicSemesterData: AcademicSemester

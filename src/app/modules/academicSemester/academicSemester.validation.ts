@@ -3,7 +3,7 @@ import {
     academicSemesterCodes,
     academicSemesterMonths,
     academicSemesterTitles,
-} from './academicSemeter.contants';
+} from './academicSemeter.constants';
 
 const create = z.object({
     body: z.object({

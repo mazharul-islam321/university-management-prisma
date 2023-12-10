@@ -29,6 +29,16 @@
             "date": 1702153263227,
             "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/errors/phu-2023-10-12-02-error.log",
             "hash": "7fdd9f046e44f4817a0e8835d03869c69a35fafc0915d36ac1a9f5220de489db"
+        },
+        {
+            "date": 1702196751134,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/errors/phu-2023-10-12-14-error.log",
+            "hash": "5688948010da1274fc4ab806f77fe42525139d661958b5ae6f2c6e4626e75254"
+        },
+        {
+            "date": 1702198861907,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/errors/phu-2023-10-12-15-error.log",
+            "hash": "19395307af6c5c36601f8f341762bd1b6db3a1bb275a88b4037deb3dcca8521a"
         }
     ],
     "hashType": "sha256"
