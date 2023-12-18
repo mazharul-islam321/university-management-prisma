@@ -49,6 +49,16 @@
             "date": 1702206337989,
             "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/errors/phu-2023-10-12-17-error.log",
             "hash": "bbd009c11c5e18d982c4017524bd8a1aff1a69624b870bab885bc958ed812f4b"
+        },
+        {
+            "date": 1702551402235,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/errors/phu-2023-14-12-16-error.log",
+            "hash": "e731c7cf723a43d7305aa342977c34670d8aad092aa9f52a101eb252faa4b9df"
+        },
+        {
+            "date": 1702552965035,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/errors/phu-2023-14-12-17-error.log",
+            "hash": "bee2f20a51740ba110fb739f60a71b0be18e4b7f159a8ca60e70f6f7a2a53963"
         }
     ],
     "hashType": "sha256"

@@ -49,6 +49,16 @@
             "date": 1702206337837,
             "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2023-10-12-17-success.log",
             "hash": "b069d743fb4ad948f95504083ef2456461fc77567f4bd10a3fd6b78da041472f"
+        },
+        {
+            "date": 1702551402233,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2023-14-12-16-success.log",
+            "hash": "ab35f9615b5e053407a0c65a596763e1d01fd5d2b1cbd5ed5724a7dff58b6fe0"
+        },
+        {
+            "date": 1702552964831,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2023-14-12-17-success.log",
+            "hash": "0d300477fbe3fb0c78eb6cacd0c9a6b4cc3ca8b4e0d1af7b3270b014e216354b"
         }
     ],
     "hashType": "sha256"

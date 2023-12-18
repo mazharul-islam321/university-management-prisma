@@ -16,17 +16,17 @@ router.post(
     AcademicSemeterController.insertIntoDB
 );
 
-// router.patch(
-//     '/:id',
-//     validateRequest(AcademicSemesterValidation.update),
-//     auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
-//     AcademicSemeterController.updateOneInDB
-// );
+router.patch(
+    '/:id',
+    validateRequest(AcademicSemesterValidation.update),
+    // auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+    AcademicSemeterController.updateOneInDB
+);
 
-// router.delete(
-//     '/:id',
-//     auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
-//     AcademicSemeterController.deleteByIdFromDB
-// );
+router.delete(
+    '/:id',
+    // auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+    AcademicSemeterController.deleteByIdFromDB
+);
 
 export const AcademicSemeterRoutes = router;

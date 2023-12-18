@@ -102,10 +102,40 @@ const getDataById = async (id: string): Promise<AcademicSemester | null> => {
     return result;
 };
 
+const updateOneInDB = async (
+    id: string,
+    payload: Partial<AcademicSemester>
+): Promise<AcademicSemester> => {
+    const result = await prisma.academicSemester.update({
+        where: {
+            id,
+        },
+        data: payload,
+    });
+
+    // if (result) {
+    //     await RedisClient.publish(EVENT_ACADEMIC_SEMESTER_UPDATED, JSON.stringify(result))
+    // }
+    return result;
+};
+
+const deleteByIdFromDB = async (id: string): Promise<AcademicSemester> => {
+    const result = await prisma.academicSemester.delete({
+        where: {
+            id,
+        },
+    });
+
+    // if (result) {
+    //     await RedisClient.publish(EVENT_ACADEMIC_SEMESTER_DELETED, JSON.stringify(result));
+    // }
+    return result;
+};
+
 export const AcademicSemesterService = {
     insertIntoDB,
     getAllFromDB,
     getDataById,
-    // updateOneInDB,
-    // deleteByIdFromDB
+    updateOneInDB,
+    deleteByIdFromDB,
 };
