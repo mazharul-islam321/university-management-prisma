@@ -4,30 +4,31 @@ import { paginationFields } from '../../../constants/pagination';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
-import { facultyFilterableFields } from './faculty.constants';
-import { FacultyService } from './faculty.service';
+import { buildingFilterableFields } from './building.constants';
+import { BuildingService } from './building.service';
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
-    const result = await FacultyService.insertIntoDB(req.body);
+    const result = await BuildingService.insertIntoDB(req.body);
 
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
-        message: 'Faculty created successfully',
+        message: 'Building created successfully!',
         data: result,
     });
 });
 
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
-    const filters = pick(req.query, facultyFilterableFields);
+    console.log(req.query);
+    const filters = pick(req.query, buildingFilterableFields);
     const options = pick(req.query, paginationFields);
 
-    const result = await FacultyService.getAllFromDB(filters, options);
+    const result = await BuildingService.getAllFromDB(filters, options);
 
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
-        message: 'Faculties fetched successfully',
+        message: 'Building fetched successfully!',
         meta: result.meta,
         data: result.data,
     });
@@ -35,41 +36,41 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
 
 const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
     const { id } = req.params;
-    const result = await FacultyService.getByIdFromDB(id);
+    const result = await BuildingService.getByIdFromDB(id);
 
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
-        message: 'Faculty fetched successfully',
+        message: 'Building fetched successfully',
         data: result,
     });
 });
 
 const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
     const { id } = req.params;
-    const result = await FacultyService.updateOneInDB(id, req.body);
+    const result = await BuildingService.updateOneInDB(id, req.body);
 
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
-        message: 'Faculty updated successfully',
+        message: 'Building updated successfully',
         data: result,
     });
 });
 
 const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
     const { id } = req.params;
-    const result = await FacultyService.deleteByIdFromDB(id);
+    const result = await BuildingService.deleteByIdFromDB(id);
 
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
-        message: 'Faculty delete successfully',
+        message: 'Building delete successfully',
         data: result,
     });
 });
 
-export const FacultyController = {
+export const BuildingController = {
     insertIntoDB,
     getAllFromDB,
     getByIdFromDB,

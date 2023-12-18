@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
+import { paginationFields } from '../../../constants/pagination';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
@@ -19,7 +20,7 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
     const filters = pick(req.query, academicDepartmentFilterableFields);
-    const options = pick(req.query, ['limit', 'page', 'sortBy', 'sortOrder']);
+    const options = pick(req.query, paginationFields);
 
     const result = await AcademicDepartmentService.getAllFromDB(
         filters,
