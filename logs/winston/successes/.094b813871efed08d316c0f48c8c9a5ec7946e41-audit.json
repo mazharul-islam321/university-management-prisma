@@ -49,6 +49,26 @@
             "date": 1704146501264,
             "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2024-02-01-04-success.log",
             "hash": "7472af07dafc983f780af16c92cf4b670b7987a4836dd279099010b39f234f76"
+        },
+        {
+            "date": 1704193450023,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2024-02-01-17-success.log",
+            "hash": "585b4e58b241bd40b30e0601e9c5b89fab32716780d41867c6487ca9da18e6a9"
+        },
+        {
+            "date": 1704234353460,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2024-03-01-04-success.log",
+            "hash": "8c94b7c39c2a37f534dccdc67e2c1d35f3e475beacf65f4e9d52609887306b32"
+        },
+        {
+            "date": 1704237420692,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2024-03-01-05-success.log",
+            "hash": "1b52f1d3303f63a088c4c3104219b3c526b02c38c087d40ba09d245a528037f6"
+        },
+        {
+            "date": 1704240382118,
+            "name": "/Users/mazharulislammamun/Desktop/core-service/university-management-core-service/logs/winston/successes/phu-2024-03-01-06-success.log",
+            "hash": "08991f7c8b2333c7173aaee3d67e6a0d5fd10153f34e1e2707b3e9175d7d9066"
         }
     ],
     "hashType": "sha256"
