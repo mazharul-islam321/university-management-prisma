@@ -18,6 +18,12 @@ router.post(
     SemesterRegistrationController.insertIntoDB
 );
 
+router.post(
+    '/start-registration',
+    // auth(ENUM_USER_ROLE.STUDENT),
+    SemesterRegistrationController.startMyRegistration
+);
+
 router.patch(
     '/:id',
     validateRequest(SemesterRegistrationValidation.update),
